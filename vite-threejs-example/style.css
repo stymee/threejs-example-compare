@@ -1,0 +1,29 @@
+html, body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#controls {
+  position: fixed;
+  padding: .2em 1em;
+  font-size: 0.75rem;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+button {
+  width: 100px;
+}
