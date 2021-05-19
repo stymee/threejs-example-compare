@@ -4,7 +4,7 @@
 	import * as THREE from 'three';	
 
 	// orbitcontrols import below results in an error?
-	//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 	// 	500
 	// Cannot use import statement outside a module
@@ -24,7 +24,7 @@
 	//     at eval (C:\Users\styme\source\repos\sveltekit-threejs-example\src\routes\index.svelte:13:31)
 
 	// but pointing directly to the node_modules directory works ok?
-	import { OrbitControls } from '../../node_modules/three/examples/jsm/controls/OrbitControls';
+	//import { OrbitControls } from '../../node_modules/three/examples/jsm/controls/OrbitControls';
 
 	let canvas: HTMLCanvasElement;
 	let scene: THREE.Scene;
