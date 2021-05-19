@@ -2,9 +2,13 @@
 
 I have been working on moving a vanilla js/ts/vite + three.js project into SvelteKit (because Svelte is awesome). I assumed all of the same imports would work, but I keep getting an error when I try to import OrbitControls per the usual method. Same goes for some other items.
 
+This same import works just fine in a vanilla js Vite project (included);
+
+```code
 Windows 10 19041.984
 node v15.2.1
 npm 7.0.8
+```
 
 ### Screenshots
 
@@ -15,6 +19,8 @@ Here's what you should see from both projects:
 ### To Reproduce
 
 Create a skeleton SvelteKit project and put in the bare minimum ThreeJs stuff to get a cube on the screen. Try to import OrbitControls like so:
+
+in the src/routes/index.svelte file
 
 ```javascript
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -66,6 +72,8 @@ SyntaxError: Cannot use import statement outside a module
 ```
 
 However, if you change the import statement to point directly at the file in node_modules, it works?
+
+in the src/routes/index.svelte file
 
 ```javascript
 import { OrbitControls } from '../../node_modules/three/examples/jsm/controls/OrbitControls';
